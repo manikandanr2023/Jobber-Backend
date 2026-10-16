@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": ["DOM", "ES2015"],
+
+    "module": "commonJS",
+    "moduleResolution": "node",
+
+    "baseUrl": ".",
+    "paths": {
+      "@notifications/*": ["src/*"]
+    },
+    "types": ["node", "jest"],
+    "rootDir": ".",
+    "outDir": "./build",
+
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "alwaysStrict": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    "sourceMap": true,
+    "pretty": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "forceConsistentCasingInFileNames": true,
+
+    "ignoreDeprecations": "6.0",
+
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      },
+      {
+        "transform": "typescript-transform-paths",
+        "afterDeclarations": true
+      }
+    ]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
+
